@@ -135,6 +135,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
     width: 100%;
+    
   }
 
   *,
@@ -150,7 +151,7 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background-color: ${colors.lightestSlate};
+    background-color: ${colors.navy};
     color: ${colors.lightSlate};
     line-height: 1.3;
     font-family: ${fonts.Calibre};
@@ -208,8 +209,8 @@ const GlobalStyle = createGlobalStyle`
   h3,
   h4,
   h5 {
-    font-weight: 600;
-    color: ${colors.white};
+    font-weight: 800;
+    color: ${colors.darkNavy};
     margin: 0 0 10px 0;
   }
 
@@ -238,15 +239,16 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: inherit;
+    color: ${colors.green};
+   
     position: relative;
     transition: ${theme.transition};
-    cursor: pointer;
+    cursor: pointer; 
 
     &:hover,
     &:focus {
-      color: ${colors.green};
-      outline: 0;
+      color: ${colors.blue};
+      outline: 1;
     }
   }
 
@@ -257,7 +259,7 @@ const GlobalStyle = createGlobalStyle`
 
     &:focus,
     &:active {
-      outline-color: ${colors.blue};
+      outline-color: ${colors.lightNavy};
     }
   }
 

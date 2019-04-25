@@ -6,6 +6,7 @@ const { colors, fontSizes, fonts } = theme;
 const Heading = styled.h3`
   position: relative;
   display: flex;
+  color: ${colors.slate};
   align-items: center;
   margin: 10px 0 40px;
   width: 100%;

@@ -11,7 +11,7 @@ const { colors, fontSizes, fonts } = theme;
 const FeaturedContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-block;
 `;
 const FeaturedGrid = styled.div`
   position: relative;
@@ -19,7 +19,7 @@ const FeaturedGrid = styled.div`
 const ContentContainer = styled.div`
   position: relative;
   z-index: 2;
-  grid-column: 1 / 7;
+  grid-column: 2 / -1;
   grid-row: 1 / -1;
   ${media.thone`
     grid-column: 1 / -1;
@@ -48,9 +48,11 @@ const ProjectName = styled.h5`
 const ProjectDescription = styled.div`
   background-color: ${colors.lightNavy};
   color: ${colors.lightSlate};
-  padding: 25px;
-  border-radius: ${theme.borderRadius};
-  font-size: ${fontSizes.large};
+  padding: 10px;
+  margin-left: -150px;
+  grid-column: 1 / -1;
+  display: flex;
+  font-size: ${fontSizes.medium};
   ${media.thone`
     background-color: transparent;
     padding: 20px 0;
@@ -84,7 +86,7 @@ const TechList = styled.ul`
   }
 `;
 const Links = styled.div`
-  display: flex;
+  display: flex-end;
   align-items: center;
   position: relative;
   margin-top: 10px;
@@ -98,28 +100,26 @@ const Links = styled.div`
   }
 `;
 const FeaturedImg = styled(Img)`
-  width: 100%;
-  max-width: 100%;
-  vertical-align: middle;
+  height: auto;
+  width: 90%;
   border-radius: ${theme.borderRadius};
   position: relative;
+  display: flex;
   mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1) brightness(90%);
   ${media.tablet`
     object-fit: cover;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     filter: grayscale(100%) contrast(1) brightness(80%);
   `};
 `;
 const ImgContainer = styled.div`
   position: relative;
   z-index: 1;
-  border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
-  border-radius: 2px;
+  padding: 0px;
+  display: flex;
   grid-column: 6 / -1;
-  grid-row: 1 / -1;
+  background-color: ${colors.green};
   transition: ${theme.transition};
   ${media.tablet`height: 100%;`};
   ${media.thone`
@@ -137,9 +137,9 @@ const ImgContainer = styled.div`
   }
   &:before {
     content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 80%;
+    height: auto;
     top: 0;
     left: 0;
     right: 0;
@@ -150,44 +150,40 @@ const ImgContainer = styled.div`
     mix-blend-mode: screen;
   }
 `;
+const Row = styled.div`
+display: flex;
+`;
 const Project = styled.div`
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 2px;
   grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  margin-bottom: 100px;
-  ${media.thone`margin-bottom: 70px;`};
+  align-items: left;
+  margin-bottom: 10px;
+  ${media.thone`margin-bottom: 20px;`};
   &:last-of-type {
     margin-bottom: 0;
   }
   &:nth-of-type(odd) {
     ${ContentContainer} {
-      grid-column: 7 / -1;
-      text-align: right;
+      text-align: left;
       ${media.thone`
         grid-column: 1 / -1;
         padding: 40px 40px 30px;
       `};
       ${media.phablet`padding: 30px 25px 20px;`};
     }
-    ${TechList} {
-      justify-content: flex-end;
-      li {
-        margin-left: ${theme.margin};
-        margin-right: 0;
-      }
-    }
+   
     ${Links} {
       justify-content: flex-end;
       margin-left: 0;
       margin-right: -10px;
     }
     ${ImgContainer} {
-      grid-column: 1 / 8;
+      grid-column: 6 / 1;
       ${media.tablet`height: 100%;`};
       ${media.thone`
         grid-column: 1 / -1;
-        opacity: 0.25;
+        opacity: 1;
       `};
     }
   }
@@ -238,8 +234,13 @@ class Featured extends Component {
                         title
                       )}
                     </ProjectName>
-                    <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
-                    {tech && (
+                    
+                      <ImgContainer>
+                      <ProjectDescription dangerouslySetInnerHTML={{ __html: html }} />
+                      <FeaturedImg fluid={cover.childImageSharp.fluid} />
+                      </ImgContainer>             
+                      
+                      {tech && (
                       <TechList>
                         {tech.map((tech, i) => (
                           <li key={i}>{tech}</li>
@@ -266,11 +267,12 @@ class Featured extends Component {
                         </a>
                       )}
                     </Links>
+                    
+                
+               
                   </ContentContainer>
-
-                  <ImgContainer>
-                    <FeaturedImg fluid={cover.childImageSharp.fluid} />
-                  </ImgContainer>
+                  
+                  
                 </Project>
               );
             })}

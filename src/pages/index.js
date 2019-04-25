@@ -24,9 +24,9 @@ const IndexPage = ({ data, location }) => (
     <MainContainer id="content">
       <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
-      <Write data={data.write.edges} />
       <Jobs data={data.jobs.edges} />
-      <Featured data={data.featured.edges} />
+      <Write data={data.write.edges} />
+      <Featured data={data.featured.edges}/>
       <Projects data={data.projects.edges} />
       <Contact data={data.contact.edges} />
     </MainContainer>
@@ -98,6 +98,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
+            disc
             cover {
               childImageSharp {
                 fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {

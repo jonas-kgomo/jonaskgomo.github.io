@@ -20,7 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Jonas',
-        short_name: 'BrittanyChiang',
+        short_name: 'JonasK',
         start_url: '/',
         background_color: config.darkNavyColor,
         theme_color: config.navyColor,
@@ -53,6 +53,13 @@ module.exports = {
               maxWidth: 1100,
               quality: 90,
               linkImagesToOriginal: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`
             },
           },
         ],

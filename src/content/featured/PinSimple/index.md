@@ -9,7 +9,7 @@ tech:
   - Vue Router
   - Express
   - Pinterest API
-show: 'false'
+show: 'true'
 ---
 
 Pinterest, but just the pictures.

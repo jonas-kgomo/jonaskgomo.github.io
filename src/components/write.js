@@ -9,75 +9,25 @@ import { Link } from 'gatsby';
 import { theme, mixins, media, Section, Heading } from '../styles';
 const { colors, fontSizes, fonts } = theme;
 
-const FeaturedContainer = styled(Section)`
-  ${mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-start;
+const Datum = styled.h5`
+font-size: ${fontSizes.smallish};
+font-weight: normal;
+margin-left: 120px;
+dısplay: grid;
+color: ${colors.green};
+font-family: ${fonts.SFMono};
+margin-top: 10px;
+padding-right: 40px;
 `;
-const FeaturedGrid = styled.div`
-  position: relative;
-`;
-const ContentContainer = styled.div`
-  position: relative;
-  z-index: 2;
-  grid-column: 1 / 7;
-  grid-row: 1 / -1;
-  ${media.thone`
-    grid-column: 1 / -1;
-    padding: 40px 40px 30px;
-  `};
-  ${media.phablet`padding: 30px 25px 20px;`};
-`;
-const Highlighter = styled.span`
-  display: block;
-  background: #FFFF00 ;
-  width: 2px;
-  height: ${theme.tabHeight}px;
-  border-radius: ${theme.borderRadius};
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: ${theme.transition};
-  transition-delay: 0.1s;
-  z-index: 10;
-  transform: translateY(
-    ${props => (props.activeTabId > 0 ? props.activeTabId * theme.tabHeight : 0)}px
-  );
-  ${media.thone`
-    width: 100%;
-    max-width: ${theme.tabWidth}px;
-    height: 2px;
-    top: auto;
-    bottom: 0;
-    transform: translateX(
-      ${props => (props.activeTabId > 0 ? props.activeTabId * theme.tabWidth : 0)}px
-    );
-  `};
-`;
-const FeaturedLabel = styled.h4`
-  font-size: ${fontSizes.smallish};
-  font-weight: normal;
-  color: ${colors.green};
-  font-family: ${fonts.SFMono};
-  margin-top: 10px;
-  padding-top: 0;
-`;
-const ProjectName = styled.h5`
-  font-size: 28px;
-  font-weight: 600;
-  margin: 0 0 20px;
-  color: ${colors.lightestSlate};
-  ${media.tablet`font-size: 24px;`};
-  a {
-    ${media.tablet`display: block;`};
-  }
-`;
-const ProjectDescription = styled.div`
+const Descript = styled.div`
   background-color: ${colors.lightNavy};
   color: ${colors.lightSlate};
-  padding: 25px;
-  border-radius: ${theme.borderRadius};
-  font-size: ${fontSizes.large};
+  font-weight: 100;
+  padding: 8px;
+  margin-left: -100px;
+  grid-column: 8 / 1;
+  display: flex-inline;
+  font-size: ${fontSizes.medium};
   ${media.thone`
     background-color: transparent;
     padding: 20px 0;
@@ -90,10 +40,87 @@ const ProjectDescription = styled.div`
     color: ${colors.white};
   }
 `;
+const FeaturedContainer = styled(Section)`
+  ${mixins.flexCenter};
+  flex-direction: column;
+  align-items: flex-block;
+`;
+const FeaturedGrid = styled.div`
+  position: relative;
+`;
+const ContentContainer = styled.div`
+position: relative;
+z-index: 2;
+grid-column: 2 / -1;
+grid-row: 1 / -1;
+${media.thone`
+  grid-column: 1 / -1;
+  padding: 40px 40px 30px;
+`};
+${media.phablet`padding: 30px 25px 20px;`};
+`;
+const FeaturedLabel = styled.h4`
+  font-size: ${fontSizes.smallish};
+  font-weight: normal;
+  margin-left: 150px;
+  display: flex-end;
+  color: ${colors.green};
+  font-family: ${fonts.SFMono};
+  margin-top: 10px;
+  padding-left: 50px;
+`;
+const ProjectName = styled.h5`
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 0px;
+  color: ${colors.lightestSlate};
+  ${media.tablet`font-size: 22px;`};
+  &:hover,
+  &:focus,
+  &:active {
+    color: ${colors.green};
+    outline: 0; 
+    &:after {
+      width: 100%;
+    }
+  }
+  &:after {
+    content: '';
+    display: flex;
+    width: 1px;
+    height: 1px;
+    position: relative;
+    bottom: 0.37em;
+    background-color: ${colors.lightestSlate};
+    transition: ${theme.transition};
+  }
+  a {
+    ${media.tablet`display: flex;`};
+    }
+`;
+const ProjectDescription = styled.div`
+  background-color: ${colors.lightNavy};
+  color: ${colors.lightSlate};
+  padding: 10px;
+  margin-left: -150px;
+  grid-column: 1 / -1;
+  display: flex;
+  font-size: ${fontSizes.medium};
+  ${media.thone`
+    background-color: transparent;
+    padding: 20px 0;
+  `};
+  p {
+    margin: 0;
+  }
+  a {
+    ${mixins.inlineLink};
+  }
+`;
 const TechList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  margin: 25px 0 10px;
+  margin: 2px 0 10px;
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.smallish};
@@ -102,7 +129,7 @@ const TechList = styled.ul`
     margin-bottom: 7px;
     white-space: nowrap;
     &:last-of-type {
-      margin-right: 0;
+      margin-right: 2px;
     }
     ${media.thone`
       color: ${colors.lightestSlate};
@@ -111,53 +138,41 @@ const TechList = styled.ul`
   }
 `;
 const Links = styled.div`
-  display: flex;
+  display: flex-end;
   align-items: center;
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
   a {
     padding: 10px;
+    color: ${colors.yellow}
     svg {
-      width: 22px;
-      height: 22px;
+      width: 25px;
+      height: 25px;
     }
   }
 `;
 const FeaturedImg = styled(Img)`
-  width: 100%;
-  max-width: 100%;
-  vertical-align: middle;
+  height: auto;
+  width: 90%;
   border-radius: ${theme.borderRadius};
   position: relative;
+  display: flex;
   mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1) brightness(90%);
   ${media.tablet`
     object-fit: cover;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     filter: grayscale(100%) contrast(1) brightness(80%);
   `};
-`;
-const Datum = styled.h5`
-font-family: ${fonts.SFMono};
-font-size: ${fontSizes.smallish};
-font-weight: normal;
-letter-spacing: 0.5px;
-color: ${colors.lightSlate};
-margin-bottom: 30px;
-svg {
-  width: 15px;
-}
 `;
 const ImgContainer = styled.div`
   position: relative;
   z-index: 1;
-  border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
-  border-radius: 2px;
-  grid-column: 6 / -1;
-  grid-row: 1 / -1;
+  padding: 0px;
+  display: flex;
+  grid-column: 7 / -1;
+  background-color: transparent;
   transition: ${theme.transition};
   ${media.tablet`height: 100%;`};
   ${media.thone`
@@ -166,8 +181,8 @@ const ImgContainer = styled.div`
   `};
   &:hover,
   &:focus {
-    background: transparent;
     &:before,
+    background: transpaernt;
     ${FeaturedImg} {
       background: transparent;
       filter: none;
@@ -175,11 +190,11 @@ const ImgContainer = styled.div`
   }
   &:before {
     content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 80%;
+    height: auto;
     top: 0;
-    left: 0;
+    left: -100px;
     right: 0;
     bottom: 0;
     z-index: 3;
@@ -188,49 +203,44 @@ const ImgContainer = styled.div`
     mix-blend-mode: screen;
   }
 `;
+const Row = styled.div`
+display: flex;
+`;
 const Project = styled.div`
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 2px;
   grid-template-columns: repeat(12, 1fr);
-  align-items: center;
-  margin-bottom: 100px;
-  ${media.thone`margin-bottom: 70px;`};
+  align-items: left;
+  margin-bottom: 10px;
+  ${media.thone`margin-bottom: 20px;`};
   &:last-of-type {
     margin-bottom: 0;
   }
   &:nth-of-type(odd) {
     ${ContentContainer} {
-      grid-column: 7 / -1;
-      text-align: right;
+      text-align: left;
       ${media.thone`
         grid-column: 1 / -1;
         padding: 40px 40px 30px;
       `};
       ${media.phablet`padding: 30px 25px 20px;`};
     }
-    ${TechList} {
-      justify-content: flex-end;
-      li {
-        margin-left: ${theme.margin};
-        margin-right: 0;
-      }
-    }
+   
     ${Links} {
       justify-content: flex-end;
       margin-left: 0;
       margin-right: -10px;
     }
     ${ImgContainer} {
-      grid-column: 1 / 8;
+      grid-column: 6 / 1;
       ${media.tablet`height: 100%;`};
       ${media.thone`
         grid-column: 1 / -1;
-        opacity: 0.25;
+        opacity: 1;
       `};
     }
   }
 `;
-
 class Write extends Component {
   static propTypes = {
     data: PropTypes.array.isRequired,
@@ -264,29 +274,29 @@ class Write extends Component {
               return (
                 <Project key={i} ref={el => (this.revealRefs[i] = el)}>
                   <ContentContainer>
-                    <FeaturedLabel>Featured Project</FeaturedLabel>
-                    <ProjectName>
-                      {path ? (
-                        <Links
-                          to={node.frontmatter.path}
-                          target="_blank"
-                          rel="nofollow noopener noreferrer"
-                          aria-label="External Link">
-                          {title}
-                         
-                        </Links>
-                      ) : (
-                        title
-                      )}
-                    </ProjectName>
-                     <div>
-                    <Link to={node.frontmatter.path}>
-                     <ProjectName>This link goes to {node.frontmatter.title}</ProjectName>
-                                         
-                     <Highlighter />
-                   </Link>
-                   <Datum><span>{ node.frontmatter.date }</span></Datum>
-                    </div>
+                    
+                      <Row> 
+                      <Link to={node.frontmatter.path}>
+                       <ProjectName>{node.frontmatter.title}</ProjectName>
+                      </Link>
+                       
+                      <FeaturedLabel>Jonas Kgomo | {node.frontmatter.date} </FeaturedLabel>
+                                     
+                      </Row>
+
+                      <ImgContainer>   
+                      <Descript>{node.frontmatter.disc}</Descript>
+                      <FeaturedImg fluid={cover.childImageSharp.fluid} />
+                      </ImgContainer> 
+                      
+                    
+                    {tech && (
+                      <TechList>
+                        {tech.map((tech, i) => (
+                          <li key={i}>{tech}</li>
+                        ))}
+                      </TechList>
+                    )}
                   </ContentContainer>
                 </Project>
               );

@@ -2,6 +2,7 @@
 date: '2014-03-23'
 title: 'Halcyon Theme'
 cover: './halcyon.png'
+avatar: '/about/biopic.png'
 path: '/halcyon'
 github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://halcyon-theme.netlify.com/'
@@ -12,7 +13,10 @@ tech:
   - iTerm2
   - Hyper
 show: 'true'
+disc: 'A web app for visualizing personalized Spotify         data. View your top artists, top tracks,               recently played tracks, and detailed audio  [Northeastern University](https://www.ccis.northeastern.edu/)           information about each track. Create and save          new playlists of recommended tracks based on           your existing playlists and more.'
 ---
+
+
 
 A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
 

@@ -8,11 +8,12 @@ const { colors, fontSizes, fonts } = theme;
 const FooterContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
-  padding: 15px;
-  background-color: ${colors.darkNavy};
-  color: ${colors.slate};
+  padding: 20px;
+  background-color: ${colors.lightestSlate};
+  color: ${colors.blue};
   text-align: center;
-  height: auto;
+  height: 12px;
+  bottom: 0px;
 `;
 const SocialContainer = styled.div`
   color: ${colors.lightSlate};

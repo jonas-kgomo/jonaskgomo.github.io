@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from './theme';
 const { colors } = theme;
 
-const InlineLink = styled.a`
+const InlineLink = styled.div`
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
@@ -10,6 +10,7 @@ const InlineLink = styled.a`
   transition: ${theme.transition};
   cursor: pointer;
   color: ${colors.green};
+  background-color: ${colors.green};
   &:hover,
   &:focus,
   &:active {

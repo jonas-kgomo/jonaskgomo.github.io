@@ -45,6 +45,9 @@ const Navbar = styled(Nav)`
 `;
 const Logo = styled.div`
   ${mixins.flexCenter};
+  color: ${colors.green};
+  background: "white";
+ 
 `;
 const LogoLink = styled(Link)`
   color: ${colors.green};

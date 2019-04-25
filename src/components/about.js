@@ -5,7 +5,7 @@ import ScrollReveal from 'scrollreveal';
 import { srConfig } from '../config';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme;
+const { colors, fontSizes, fonts } = theme
 
 const AboutContainer = styled(Section)`
   position: relative;
@@ -16,8 +16,8 @@ const FlexContainer = styled.div`
   ${media.tablet`display: block;`};
 `;
 const ContentContainer = styled.div`
-  width: 60%;
-  max-width: 480px;
+  width: 80%;
+  max-width: 500px;
   ${media.tablet`width: 100%;`};
   a {
     ${mixins.inlineLink};
@@ -65,7 +65,7 @@ const AvatarContainer = styled.div`
   position: relative;
   border-radius: ${theme.borderRadius};
   background-color: ${colors.green};
-  margin-left: -20px;
+  margin-left: 20px;
   &:hover,
   &:focus {
     background: transparent;

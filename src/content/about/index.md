@@ -1,6 +1,7 @@
 ---
 title: 'About Me'
-avatar: './me.png'
+avatar: './me.png' 
+photos: './me.png'
 skills:
   - JavaScript
   - TypeScript

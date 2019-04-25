@@ -1,41 +1,20 @@
-# MapToUtopia
-
-- textmesh pro 
-- PRO
+# Make Titles: font Playfair Display SC
 
 
+##  TODO
 
-# V
+1.  **Mini profile picture**
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status)](https://app.netlify.com/sites/brittanychiang/deploys)
+   grey and light font for this
 
-The fourth iteration of my personal site built with [Gatsby](https://www.gatsbyjs.org/) and hosted with [Netlify](https://www.netlify.com/).
+2.  **Next, Prev**
 
-> 📢 **PSA for those who want to fork or copy this repo and use it for their own site:**
->
-> Please be a decent person and give me proper credit by linking back to my website! Refer to this handy [quora post](https://www.quora.com/Is-it-bad-to-copy-other-peoples-code) if you're not sure.
 
-👀 [Looking for v3?](https://bchiang7.github.io/)
 
-## 🚀 Quick Start
+3.  **Markdown Style**
 
-1.  **Install the Gatsby CLI**
-
-    ```sh
-    npm install -g gatsby-cli
-    ```
-
-2.  **Install and switch to the correct version of Node using NVM**
-
-    ```sh
-    nvm install
-    ```
-
-3.  **Install dependencies**
-
-    ```sh
-    yarn install
-    ```
+   - formular
+   - colours black
 
 4.  **Start the development server**
 

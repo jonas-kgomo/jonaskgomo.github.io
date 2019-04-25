@@ -14,10 +14,12 @@ const { colors, fontSizes, fonts } = theme;
 
 
 const Container = styled.div`
-background: #FFFFFF
-
+background: white;
+a {
+  color: #3333FF;
+  font-style: italic; 
+}
 `
-
 
 
 const SkipToContent = styled.a`
@@ -96,8 +98,8 @@ class Display extends Component {
                 {location && nav && <Header location={location} navLinks={nav} />}
                 <Email/>
                 
-                <div css={{ margin: `3rem auto`, maxWidth: 600 }}>{children}</div>
-                <Footer />
+                <div css={{ margin: `4rem auto`, maxWidth: 750}}>{children}</div>
+              
               </div>
               
             )}

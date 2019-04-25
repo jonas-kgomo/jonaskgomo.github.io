@@ -2,6 +2,7 @@
 date: '2014-03-23'
 title: 'Simulacra VR'
 cover: './halcyon.png'
+avatar: '/about/biopic.png'
 path: '/simulacra'
 github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://halcyon-theme.netlify.com/'
@@ -12,6 +13,10 @@ tech:
   - iTerm2
   - Hyper
 show: 'true'
+disc: 'My main motivation for building this was so I          
+       could cycle through pins on my boards with the
+       be at tou ash sd. sdjnkbj sfubidv saldfibf sdhjf . sfubairufbr
+       sdkjfbsdiufbi'
 ---
 
 
@@ -21,18 +26,23 @@ show: 'true'
 
 *sd*
 **sd**
+
 > from Jean Baudrillard, Selected Writings, ed. Mark Poster (Stanford; Stanford University Press, 1988), pp.166-184.
 
--- 
+> fdd
 
-- 
 
+$$D_s$$
+
+[Northeastern University](https://www.ccis.northeastern.edu/)
+A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).
 
 The simulacrum is never that which conceals the truth--it is the truth which conceals that there is none.
 
 
-\[\int G(s)=  Sim_ p\]
 
+
+$F_x$
 The simulacrum is true.
 
 `Sectionalise < f --> `
