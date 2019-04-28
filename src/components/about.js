@@ -50,6 +50,7 @@ const PicContainer = styled.div`
   width: 40%;
   max-width: 300px;
   margin-left: 60px;
+  
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
 `;
@@ -59,7 +60,9 @@ const Avatar = styled(Img)`
   filter: grayscale(100%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
+
 `;
+//  border-radius: 100%;
 const AvatarContainer = styled.div`
   width: 100%;
   position: relative;

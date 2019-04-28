@@ -23,7 +23,8 @@ const ContentContainer = styled.div`
   grid-row: 1 / -1;
   ${media.thone`
     grid-column: 1 / -1;
-    padding: 40px 40px 30px;
+    padding: 20px 20px 20px;
+
   `};
   ${media.phablet`padding: 30px 25px 20px;`};
 `;

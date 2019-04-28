@@ -27,6 +27,7 @@ const Hi = styled.h1`
 `;
 const Name = styled.h2`
   font-size: 80px;
+  color: ${colors.lightSlate};
   line-height: 1.1;
   margin: 0;
   ${media.desktop`font-size: 70px;`};

@@ -3,7 +3,6 @@ date: '2018-12-23'
 title: 'Pin Simple'
 path: '/pinsimple'
 cover: './pin-simple.png'
-avatar: '/about/biopic.png'
 github: 'https://github.com/bchiang7/pin-simple'
 external: 'https://pin-simple.herokuapp.com/'
 tech:

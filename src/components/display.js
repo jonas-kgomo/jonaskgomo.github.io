@@ -9,8 +9,10 @@ import Email from './email';
 import Footer from './footer';
 import { nav } from '../config';
 import styled from 'styled-components';
-import { GlobalStyle, theme } from '../styles';
+//import { GlobalStyle, theme } from '../styles';
 const { colors, fontSizes, fonts } = theme;
+
+import { GlobalStyle, theme, mixins, media, Section, Heading } from '../styles';
 
 
 const Container = styled.div`
@@ -18,9 +20,7 @@ background: white;
 a {
   color: #3333FF;
   font-style: italic; 
-}
-`
-
+}`;
 
 const SkipToContent = styled.a`
   position: absolute;
@@ -29,15 +29,15 @@ const SkipToContent = styled.a`
   width: 1px;
   height: 1px;
   overflow: visible;
-  z-index: -99;
+  z-index: 1;
   &:hover {
     background-color: ${colors.lightSlate};
   }
   &:focus,
   &:active {
     outline: 0;
-    color: ${colors.green};
-    background-color: ${colors.lightNavy};
+    color: ${colors.navy};
+    background-color: ${colors.lightestNavy};
     border-radius: ${theme.borderRadius};
     padding: 18px 23px;
     font-size: ${fontSizes.small};
@@ -89,7 +89,7 @@ class Display extends Component {
             <Head metadata={site.siteMetadata} />
             <Container>
             <GlobalStyle  />
-            <SkipToContent href="#content">Skip to Content</SkipToContent>
+            <SkipToContent  to="/">Back</SkipToContent>
 
             {isLoading ? (
               <Loader finishLoading={this.finishLoading} />
@@ -98,8 +98,8 @@ class Display extends Component {
                 {location && nav && <Header location={location} navLinks={nav} />}
                 <Email/>
                 
-                <div css={{ margin: `4rem auto`, maxWidth: 750}}>{children}</div>
-              
+                <div css={{ margin: `1rem auto`, minWidth:200, maxWidth:740}}>{children}</div>
+ 
               </div>
               
             )}
@@ -112,3 +112,7 @@ class Display extends Component {
 }
 
 export default Display;
+
+// <Mobile> {children}</Mobile>  
+// <div css={{ margin: `2rem auto`, minWidth:320, maxWidth:740}}>{children}</div>
+              

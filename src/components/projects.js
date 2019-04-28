@@ -15,6 +15,7 @@ const ProjectsContainer = styled(Section)`
 `;
 const ProjectsTitle = styled.h4`
   margin: 0 auto 50px;
+  color: ${colors.lightestSlate};
   font-size: ${fontSizes.h3};
   ${media.tablet`font-size: 24px;`};
   a {

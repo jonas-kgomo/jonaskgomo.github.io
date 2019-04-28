@@ -2,7 +2,6 @@
 date: '2014-03-23'
 title: 'Simulacra VR'
 cover: './halcyon.png'
-avatar: '/about/biopic.png'
 path: '/simulacra'
 github: 'https://github.com/bchiang7/halcyon-site'
 external: 'https://halcyon-theme.netlify.com/'

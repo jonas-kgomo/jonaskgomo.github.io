@@ -3,11 +3,10 @@ date: '2019-12-23'
 title: 'Spotify Profile'
 path: '/spotify'
 cover: './demo.png'
-avatar: './about/biopic.png'
 github: 'https://github.com/bchiang7/spotify-profile'
 external: 'https://spotify-profile.herokuapp.com/'
 tech:
-  - React
+  - Reacts
   - Express
   - Reach Router
   - Styled Components
