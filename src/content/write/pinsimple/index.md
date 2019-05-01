@@ -1,6 +1,6 @@
 ---
 date: '2018-12-23'
-title: 'Pin Simple'
+title: 'Caustic Shareables'
 path: '/pinsimple'
 cover: './pin-simple.png'
 github: 'https://github.com/bchiang7/pin-simple'

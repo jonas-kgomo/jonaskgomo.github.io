@@ -1,13 +1,13 @@
 ---
 date: '2018-04-20'
-title: 'Spotify’s Top Tracks of 2017'
+title: 'Simulacra VR'
 image: ''
-github: 'https://github.com/bchiang7/spotify-top-tracks-2017'
-external: ''
+github: 'https://github.com/jonas-kgomo/SIMULACRA-VR'
+external: 'https://jonas-kgomo.github.io/prosthetic-studios/'
 tech:
-  - R
-  - Spotify Web API
+  - C#
+  - Pure Data
 show: 'true'
 ---
 
-R Project for my Data Science class at Northeastern to analyze the top Spotify tracks of 2017 and their audio features.
+Developing virtual reality music instrument app that lets you create and play music

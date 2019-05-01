@@ -140,7 +140,7 @@ class Projects extends Component {
     const projectsToShow = showMore ? projects : firstSix;
 
     return (
-      <ProjectsContainer>
+      <ProjectsContainer id="projects">
         <ProjectsTitle ref={el => (this.projects = el)}>Other Projects</ProjectsTitle>
         <ProjectsGrid>
           <TransitionGroup className="projects">

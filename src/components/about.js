@@ -16,8 +16,8 @@ const FlexContainer = styled.div`
   ${media.tablet`display: block;`};
 `;
 const ContentContainer = styled.div`
-  width: 80%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 750px;
   ${media.tablet`width: 100%;`};
   a {
     ${mixins.inlineLink};
@@ -48,8 +48,9 @@ const Skill = styled.li`
 const PicContainer = styled.div`
   position: relative;
   width: 40%;
+  margin-top: 300px;
   max-width: 300px;
-  margin-left: 60px;
+  margin-left: 80px;
   
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
@@ -57,7 +58,7 @@ const PicContainer = styled.div`
 const Avatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
-  filter: grayscale(100%) contrast(1);
+  filter: grayscale(90%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
 
@@ -106,6 +107,59 @@ const AvatarContainer = styled.div`
     z-index: -1;
   }
 `;
+// eFFIGY
+
+const HeroContainer = styled(Section)`
+  ${mixins.flexCenter};
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  ${media.tablet`padding-top: 150px;`};
+  div {
+    width: 100%;
+  }
+`;
+const Hi = styled.h1`
+  color: ${colors.green};
+  margin: 0 0 20px 3px;
+  font-size: ${fontSizes.medium};
+  font-family: ${fonts.SFMono};
+  font-weight: normal;
+  ${media.desktop`font-size: ${fontSizes.small};`};
+  ${media.tablet`font-size: ${fontSizes.smallish};`};
+`;
+const Name = styled.h2`
+  font-size: 80px;
+  color: ${colors.lightSlate};
+  line-height: 1.1;
+  margin: 0;
+  ${media.desktop`font-size: 70px;`};
+  ${media.tablet`font-size: 60px;`};
+  ${media.phablet`font-size: 50px;`};
+  ${media.phone`font-size: 40px;`};
+`;
+const Subtitle = styled.h3`
+  font-size: 80px;
+  line-height: 1.1;
+  color: ${colors.lightSlate};
+  ${media.desktop`font-size: 70px;`};
+  ${media.tablet`font-size: 60px;`};
+  ${media.phablet`font-size: 50px;`};
+  ${media.phone`font-size: 40px;`};
+`;
+const Blurb = styled.div`
+  margin-top: 25px;
+  width: 50%;
+  max-width: 500px;
+  a {
+    ${mixins.inlineLink};
+  }
+`;
+const EmailLink = styled.a`
+  ${mixins.bigButton};
+  font-size: ${fontSizes.smallish};
+  margin: 30px;
+`;
 
 class About extends Component {
   static propTypes = {
@@ -115,26 +169,37 @@ class About extends Component {
   componentDidMount() {
     ScrollReveal().reveal(this.about, srConfig());
   }
+  
 
   render() {
     const { data } = this.props;
     const { frontmatter, html } = data[0].node;
     const { title, skills, avatar } = frontmatter;
 
+
+ 
+
     return (
       <AboutContainer id="about" ref={el => (this.about = el)}>
-        <Heading>{title}</Heading>
+        
         <FlexContainer>
           <ContentContainer>
+            <Hi>Hi , my name is </Hi>
+            <Name>Jonas Kgomo.</Name>
+            <Subtitle>I am a software developer.</Subtitle>
+
             <div dangerouslySetInnerHTML={{ __html: html }} />
+            
             <SkillsContainer>
               {skills && skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
             </SkillsContainer>
+            <EmailLink> Get in touch! </EmailLink>
           </ContentContainer>
           <PicContainer>
             <AvatarContainer>
               <Avatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
             </AvatarContainer>
+
           </PicContainer>
         </FlexContainer>
       </AboutContainer>

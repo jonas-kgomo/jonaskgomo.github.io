@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Brittany Chiang | Software Engineer',
+  siteTitle: 'Jonas Kgomo | Software Engineer',
   siteDescription:
     'Brittany Chiang is a software engineer based in Boston, MA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
   siteKeywords:
@@ -9,9 +9,9 @@ module.exports = {
 
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
 
-  name: 'Brittany Chiang',
-  location: 'Boston, MA',
-  email: 'brittany.chiang@gmail.com',
+  name: 'Jonas Kgomo',
+  location: 'Istanbul, TR',
+  email: 'jonaskgmoo@gmail.com',
   socialMedia: [
     {
       name: 'Github',
@@ -45,12 +45,12 @@ module.exports = {
       url: '#jobs',
     },
     {
-      name: 'Work',
-      url: '#projects',
+      name: 'Blog',
+      url: '#blog',
     },
     {
-      name: 'Contact',
-      url: '#contact',
+      name: 'Work',
+      url: '#projects',
     },
   ],
 

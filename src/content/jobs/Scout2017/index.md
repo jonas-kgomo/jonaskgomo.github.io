@@ -1,11 +1,11 @@
 ---
 date: '2017-04-01'
-title: 'Studio Developer'
-company: 'Scout'
-location: 'Northeastern University'
-range: 'Jan - June 2017'
-url: 'https://web.northeastern.edu/scout/'
+title: 'Augmented Reality Developer'
+company: 'HoloNext'
+location: 'Istanbul'
+range: 'Jan - June 2018'
+url: 'https://holonext.com/?lang=en'
 ---
 
-- Collaborated with a small team of student designers to spearhead a new brand and design system for Scout’s inaugural student-led design conference at Northeastern
-- Worked closely with designers and management team to develop, document, and manage the conference’s marketing website using Jekyll, Sass, and JavaScript
+- Developing AI for Photogrammetry and 3D reconstruction 
+- Using the <b>reality stack</b>:  ARkit, ARcore and Unity 3D

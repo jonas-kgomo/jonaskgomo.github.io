@@ -19,19 +19,10 @@ disc: 'My main motivation for building this was so I
 ---
 
 
-# Echo
-## Echoe
-### Echoee
 
-*sd*
-**sd**
+Simulacra is a tool that helps you design virtual sound worlds with abstract instruments.The infrastructure enable users without musicality develop sophisticated instruments. Simulacra is a hyperinstrument that approaches musical instruments as haptic devices.
 
-> from Jean Baudrillard, Selected Writings, ed. Mark Poster (Stanford; Stanford University Press, 1988), pp.166-184.
-
-> fdd
-
-
-$$D_s$$
+Simulacra uses machine learning techniques to create experimental instruments which gives musicians the ability to make music using completely new sounds. It helps experience a cross between music and perception.
 
 [Northeastern University](https://www.ccis.northeastern.edu/)
 A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode), [Package Control](https://packagecontrol.io/packages/Halcyon%20Theme), [Atom Package Manager](https://atom.io/themes/halcyon-syntax), and [npm](https://www.npmjs.com/package/hyper-halcyon-theme).

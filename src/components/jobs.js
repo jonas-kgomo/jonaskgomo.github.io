@@ -23,6 +23,7 @@ const Tabs = styled.div`
   z-index: 3;
   ${media.thone`
     display: flex;
+    margin-top: 10px;
     margin-bottom: 30px;
     width: 100%;
     overflow-x: scroll;
@@ -169,6 +170,8 @@ class Jobs extends Component {
     return (
       <JobsContainer id="jobs" ref={el => (this.jobs = el)}>
         <Heading>Where I&apos;ve Worked</Heading>
+        <div>I am available for contract work, remote and full-time job.</div>
+        <br/>  
         <TabsContainer>
           <Tabs role="tablist">
             {data &&
@@ -190,12 +193,15 @@ class Jobs extends Component {
               })}
             <Highlighter activeTabId={activeTabId} />
           </Tabs>
+          
           <ContentContainer>
+                
             {data &&
               data.map(({ node }, i) => {
                 const { frontmatter, html } = node;
                 const { title, url, company, range } = frontmatter;
                 return (
+                 
                   <TabContent
                     key={i}
                     isActive={this.isActive(i)}

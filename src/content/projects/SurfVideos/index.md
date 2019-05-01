@@ -1,14 +1,15 @@
 ---
 date: '2018-03-01'
-title: 'Surf Videos'
+title: 'Academy Youtube'
 image: ''
-github: 'https://github.com/bchiang7/Surf-Videos'
+github: 'https://github.com/jonas-kgomo/academy-youtube'
 external: ''
 tech:
   - React
-  - Axios
+  - Redux
   - YouTube API
 show: 'true'
 ---
 
-Small React project to browse and search surf videos via the YouTube API.
+Small React project to help developers find playlists of programming language videos via the YouTube API.
+

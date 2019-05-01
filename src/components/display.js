@@ -17,6 +17,10 @@ import { GlobalStyle, theme, mixins, media, Section, Heading } from '../styles';
 
 const Container = styled.div`
 background: white;
+width:100%;
+height: 100%;
+${media.thone 
+  `width: 230%`};
 a {
   color: #3333FF;
   font-style: italic; 
@@ -98,7 +102,7 @@ class Display extends Component {
                 {location && nav && <Header location={location} navLinks={nav} />}
                 <Email/>
                 
-                <div css={{ margin: `1rem auto`, minWidth:200, maxWidth:740}}>{children}</div>
+                <div css={{ margin: `2rem auto`, minWidth: 300,maxWidth:740}}>{children}</div>
  
               </div>
               

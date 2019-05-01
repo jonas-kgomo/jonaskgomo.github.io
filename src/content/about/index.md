@@ -3,18 +3,22 @@ title: 'About Me'
 avatar: './me.png' 
 photos: './me.png'
 skills:
+  - QISkit
   - JavaScript
-  - TypeScript
+  - LaTex
   - HTML & CSS
   - React
-  - Vue
-  - Ember
+  - C#
+  - Java
   - Node.js
-  - Express
+  - PyQuil
+  - Python
 ---
 
-Hi , I am Jonas , a software engineer based in Istanbul and South Africa,  who enjoys building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.
+I am software engineer based in Istanbul, who enjoys building things that live on the internet.
 
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I get to work on a variety of interesting projects and tools on a daily basis.
+Shortly after graduating from BSc. Mathematics  at [Istanbul University](http://www.istanbul.edu.tr/en/_), I joined the engineering team at [XR First](https://www.xrfirst.com/) where I got to work on a variety of Mixed Reality projects and tools on a daily basis.
 
-Here's a few things I'm experienced with:
+I dedicate my education life to studying quantum information. Currently  I'm searching for Phd in this field. Leisures involve photogrammetry, gaming and coding.
+ 
+Here's a few programming languages I work with:

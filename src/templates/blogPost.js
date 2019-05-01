@@ -11,10 +11,38 @@ import { IconLogo } from '../components/icons';
 const { colors, fontSizes, fonts } = theme;
 
 const biopic = 'https://bytebucket.org/jonas-kgomo/port-folio/raw/80953f58a50abc5978c4a6f22906f8dd2d3eed63/src/templates/biopic.png';
-
+// 'https://bitbucket.org/jonas-kgomo/port-folio/src/master/src/content/about/mewire.png'
 const AboutContainer = styled(Section)`
   position: relative;
 `; 
+const Logo = styled.div`
+  ${mixins.flexRight};
+  margin-bottom: 20;
+  margin: 20;
+  margin-left: 500px;
+  display: flex;
+  color: ${colors.darkNavy};
+ 
+`;
+const LogoLink = styled(Link)`
+  color: ${colors.navy};  
+  width: 30px;
+  height: 30px;
+  &:hover,
+  &:focus {
+    svg {
+      fill: ${colors.navy};
+      stroke: ${colors.navy};
+      
+    }
+  }
+  svg {
+    fill: none;
+    color: ${colors.navy};
+    transition: ${theme.transition};
+    user-select: none;
+  }
+`;
 const Auth = styled .h6`
 font-size: ${fontSizes.small};
 font-weight: normal;
@@ -52,34 +80,40 @@ function BlogPost(props) {
     const { title, date, avatar, disc } = post.frontmatter;
 
     return (
-        <Display style= "margin: 40px">
+        <Display style="margin: 50px;">
              
             <div>
                 <h1>{title}</h1>
-                
-                
+             
                  <div
-            style={{
+                   style={{
               display: `flex`,
               marginBottom: 20,
             }}
           > 
-         <img src={biopic} alt="Logo"
+         <img src={biopic} alt="Home"
                        style={{
             
                          marginRight: 20,
                          marginBottom: 20,
                          marginTop: 20,
-                         minWidth: 30,
+                         minWidth: 60,
                          width: 60,
                          height: 60,
                          borderRadius: `100%`,
-                        }}/>
+                        }}
+                        />
+                        
             
             
                    <Auth>Jonas Kgomo <br/>
                    {post.frontmatter.date}
                    </Auth>
+                   <Logo style={{marginTop: 20}}>
+                          <LogoLink to="/">
+                           <IconLogo />
+                         </LogoLink>
+                </Logo>
                 </div> 
               
              
@@ -98,8 +132,9 @@ function BlogPost(props) {
              style={{
             marginRight: 20,
             marginBottom: 20,
-            minWidth: 200,
-            width: 300,
+            minWidth: 100,
+            maxWidth:300,
+            width: 250,
             height: 200,
             borderRadius: `100%`,
           }}
@@ -110,8 +145,8 @@ function BlogPost(props) {
             />
             <p style={{padding: 30 }}>
             <br/>
-            Written by <strong>{title}</strong> who lives and works in San
-           Francisco building useful things.
+            Written by <strong>Jonas</strong> on building useful things. 
+            Thanks for reading 
                          
             </p>
           </div>

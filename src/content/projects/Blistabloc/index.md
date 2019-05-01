@@ -1,16 +1,20 @@
 ---
 date: '2018-05-01'
-title: 'blistabloc'
+title: 'Demo Scene: Audiovisual'
 image: ''
 github: ''
-external: 'https://blistabloc.com/'
+external: 'https://github.com/jonas-kgomo/Running-Guy'
 tech:
-  - Wordpress
-  - Timber
-  - WooCommerce
+  - JavaScript
+  - Java
+  - Mathieu Henri
   - SCSS
   - JS
 show: 'true'
 ---
 
-Custom wordpress theme and e-commerce site built with Timber and WooCommerce for blistabloc, a start-up selling the only reactive shoe insert that prevents blisters from forming.
+Creative Coding : 
+Running JavaScript demo scene in Android WebView.
+
+[Live](http://www.p01.org/jsconf_asia_2015/live.htm) | Credits: p01
+

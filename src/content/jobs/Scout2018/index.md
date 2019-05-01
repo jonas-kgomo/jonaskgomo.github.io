@@ -1,12 +1,13 @@
 ---
 date: '2018-04-01'
-title: 'Studio Developer'
-company: 'Scout'
-location: 'Northeastern University'
-range: 'Jan - April 2018'
-url: 'https://web.northeastern.edu/scout/'
+title: 'Tech Ambassador'
+company: 'Iris AI'
+location: 'Singularity University'
+range: 'Jan 2017- Present'
+url: 'https://iris.ai/'
 ---
 
-- Worked with a team of three designers to build a marketing website and e-commerce platform for [blistabloc](https://blistabloc.com), an ambitious startup originating from Northeastern
-- Helped solidify a brand direction for blistabloc that spans both packaging and web
-- Interfaced with clients on a weekly basis, providing technological expertise
+- Training the knowledge graph of AI used to collect academic articles, to help researchers find relevant articles
+- Ambassador for [IRIS AI](https://iris.ai/),  R&D Science Assistant Building a precise reading list of research documents 
+- Helped solidify a brand direction for Project AIUR and search tools that spans both academia and industry
+

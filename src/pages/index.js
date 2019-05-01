@@ -22,17 +22,18 @@ const MainContainer = styled(Main)`
 const IndexPage = ({ data, location }) => (
   <Layout location={location}>
     <MainContainer id="content">
-      <Hero data={data.hero.edges} />
+      
       <About data={data.about.edges} />
       <Jobs data={data.jobs.edges} />
       <Write data={data.write.edges} />
-      <Featured data={data.featured.edges}/>
       <Projects data={data.projects.edges} />
-      <Contact data={data.contact.edges} />
     </MainContainer>
   </Layout>
 );
-
+// Removed for saving space <Hero data={data.hero.edges} />
+// <Contact data={data.contact.edges} />
+//<Featured data={data.featured.edges}/>
+// 
 IndexPage.propTypes = {
   data: PropTypes.object.isRequired,
   location: PropTypes.object,

@@ -257,7 +257,7 @@ class Write extends Component {
     const featuredProjects = data.filter(({ node }) => node.frontmatter.show === 'true');
             
     return (
-      <FeaturedContainer id="projects">
+      <FeaturedContainer id="blog">
         <Heading ref={el => (this.featured = el)}>Some Things I&apos;ve Built</Heading>
         <FeaturedGrid>
           {featuredProjects &&

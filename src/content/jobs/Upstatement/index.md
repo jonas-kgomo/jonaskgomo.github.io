@@ -1,12 +1,13 @@
 ---
-date: '2018-05-14'
-title: 'Engineer'
-company: 'Upstatement'
-location: 'Boston, MA'
-range: 'May 2018 - Present'
-url: 'https://www.upstatement.com/'
+date: '2018-12-14'
+title: 'Quantum Engineer'
+company: 'Bohr Technology'
+location: 'Poland, Warsaw'
+range: 'Dec 2018 - Present'
+url: 'https://www.bohr.technology/'
 ---
 
-- Write modern, performant, maintainable code for a diverse array of client and internal projects
-- Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Gatsby, React, Craft, Wordpress, Prismic, and Netlify
+- Researching quantum optimization algorithms (Travelling Salesman Problem)
+- Work with Python for the Project Q (ETH Zurich) framework.
 - Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis
+- Solving optimization for intractable problems

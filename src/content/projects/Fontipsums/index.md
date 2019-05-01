@@ -7,7 +7,7 @@ external: 'http://bchiang7.github.io/fontipsums/'
 tech:
   - HTML
   - SCSS
-show: 'true'
+show: 'false'
 ---
 
 Simple website to display some of my favorite font pairings combined with some fun lorem ipsum variations found on the web.
