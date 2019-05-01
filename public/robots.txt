@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jonaskgomo.github.io/sitemap.xml
+Host: https://jonaskgomo.github.io
