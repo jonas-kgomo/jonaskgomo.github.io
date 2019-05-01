@@ -1,13 +1,13 @@
 module.exports = {
   siteTitle: 'Jonas Kgomo | Software Engineer',
   siteDescription:
-    'Brittany Chiang is a software engineer based in Boston, MA who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications.',
+    'Jonas Kgomo is a software developer working in quantum computing',
   siteKeywords:
-    'Brittany Chiang, Brittany, Chiang, bchiang7, software engineer, front-end engineer, web developer, javascript, northeastern',
-  siteUrl: 'https://brittanychiang.com',
+    'Jonas, Kgomo, Jonas, quantum developer, software engineer,qiskit, web developer, javascript, Istanbul',
+  siteUrl: 'https://jonaskgomo.github.io',
   siteLanguage: 'en_US',
 
-  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
+  googleVerification: 'v45gEXrlqmdCSjmEvzuvfJfEZ4y3R7onGfXG7tvxBBc',
 
   name: 'Jonas Kgomo',
   location: 'Istanbul, TR',
@@ -15,23 +15,23 @@ module.exports = {
   socialMedia: [
     {
       name: 'Github',
-      url: 'https://github.com/bchiang7/',
+      url: 'https://github.com/jonas-kgomo/',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7/',
+      url: 'https://www.linkedin.com/in/jonas-kgomo/',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/bchiang7/',
+      url: 'https://codepen.io/jonas-kgomo/',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7/',
+      url: 'https://www.instagram.com/viberian.sun/',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/MarkovianRegime',
     },
   ],
 
@@ -54,8 +54,8 @@ module.exports = {
     },
   ],
 
-  twitterHandle: '@bchiang7',
-  googleAnalyticsID: 'UA-45666519-2',
+  twitterHandle: '@MarkovianRegime',
+  googleAnalyticsID: 'UA-96477171-2',
 
   headerHeight: 100,
 
