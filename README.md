@@ -1,26 +1,26 @@
-# Make Titles: font Playfair Display SC
+# PROFILE
 
+## TODO
 
-##  TODO
+1.  \*_Add more projects_
 
-1.  **Mini profile picture**
+Raven, Flutter,
 
-   grey and light font for this
+2.  **Social Media**
 
-2.  **Next, Prev**
+add xing ✔ beondeck ⬜
 
+3.  **Profile**
 
+- colour -> green filter
 
-3.  **Markdown Style**
-
-   - formular
-   - colours black
-
-4.  **Start the development server**
+4.  **Programming Lang Icons **
 
     ```sh
     yarn start
     ```
+
+5.  Google Verification
 
 ## Building and Running for Production
 

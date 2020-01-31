@@ -71,7 +71,7 @@ class Social extends Component {
                           <IconGithub />
                         ) : name === 'Linkedin' ? (
                           <IconLinkedin />
-                        ) : name === 'Codepen' ? (
+                        ) : name === 'Xing' ? (
                           <IconCodepen />
                         ) : name === 'Instagram' ? (
                           <IconInstagram />

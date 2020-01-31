@@ -9,8 +9,8 @@ const FooterContainer = styled.footer`
   ${mixins.flexCenter};
   flex-direction: column;
   padding: 20px;
-  background-color: ${colors.lightestSlate};
-  color: ${colors.blue};
+  background-color: ${colors.darkNavy};
+  color: ${colors.lighterSlate};
   text-align: center;
   height: 12px;
   bottom: 0px;
@@ -37,7 +37,7 @@ const Copy = styled.p`
   margin: 5px 0 3px;
 `;
 const GithubLink = styled.a`
-  color: ${colors.navy};
+  color: ${colors.lightGrey};
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.xsmall};
 `;
@@ -58,7 +58,7 @@ const Footer = () => (
                   <IconGithub />
                 ) : name === 'Linkedin' ? (
                   <IconLinkedin />
-                ) : name === 'Codepen' ? (
+                ) : name === 'Xing' ? (
                   <IconCodepen />
                 ) : name === 'Instagram' ? (
                   <IconInstagram />

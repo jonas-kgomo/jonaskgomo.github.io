@@ -15,23 +15,23 @@ module.exports = {
   socialMedia: [
     {
       name: 'Github',
-      url: 'https://github.com/bchiang7/',
+      url: 'https://github.com/jonas-kgomo/',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7/',
+      url: 'https://www.linkedin.com/in/jonas-kgomo/',
     },
     {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7/',
+      name: 'Xing',
+      url: 'https://www.xing.com/profile/jonas_kgomo/',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7/',
+      url: 'https://www.instagram.com/viberian.sun/',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/jonas_kg',
     },
   ],
 
