@@ -1,20 +1,18 @@
 ---
 date: '2018-05-01'
-title: 'Demo Scene: Audiovisual'
+title: 'Raven'
 image: ''
 github: ''
-external: 'https://github.com/jonas-kgomo/Running-Guy'
+external: 'https://github.com/jonas-kgomo/raven'
 tech:
   - JavaScript
-  - Java
-  - Mathieu Henri
-  - SCSS
+  - Tailwind CSS
+  - Twitter
+  - Rich-Text
   - JS
 show: 'true'
 ---
 
-Creative Coding : 
-Running JavaScript demo scene in Android WebView.
+<b style="display:inline; font-size:18px; color: #f48023" >Raven </b>is a social-network for finding dev teams, jobs and academic articles.
 
-[Live](http://www.p01.org/jsconf_asia_2015/live.htm) | Credits: p01
-
+<p>Experiment on sharing academic and code content with strong type-setting</p>

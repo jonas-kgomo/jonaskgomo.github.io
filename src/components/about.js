@@ -4,8 +4,8 @@ import Img from 'gatsby-image';
 import ScrollReveal from 'scrollreveal';
 import { srConfig } from '../config';
 import styled from 'styled-components';
-import { theme, mixins, media, Section, Heading } from '../styles';
-const { colors, fontSizes, fonts } = theme
+import { theme, mixins, media, Section } from '../styles';
+const { colors, fontSizes, fonts } = theme;
 
 const AboutContainer = styled(Section)`
   position: relative;
@@ -50,26 +50,25 @@ const PicContainer = styled.div`
   width: 40%;
   margin-top: 300px;
   max-width: 300px;
-  margin-left: 80px;
-  
+  margin-left: 70px;
+
   ${media.tablet`margin: 60px auto 0;`};
   ${media.phablet`width: 70%;`};
 `;
 const Avatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
-  filter: grayscale(90%) contrast(1);
+  filter: contrast(99%);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-
 `;
 //  border-radius: 100%;
 const AvatarContainer = styled.div`
   width: 100%;
   position: relative;
   border-radius: ${theme.borderRadius};
-  background-color: ${colors.green};
-  margin-left: 20px;
+  background-color: ${colors.white};
+  margin-left: 0px;
   &:hover,
   &:focus {
     background: transparent;
@@ -107,9 +106,8 @@ const AvatarContainer = styled.div`
     z-index: -1;
   }
 `;
-// eFFIGY
 
-const HeroContainer = styled(Section)`
+/* const HeroContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
@@ -118,7 +116,8 @@ const HeroContainer = styled(Section)`
   div {
     width: 100%;
   }
-`;
+`; */
+
 const Hi = styled.h1`
   color: ${colors.green};
   margin: 0 0 20px 3px;
@@ -147,14 +146,14 @@ const Subtitle = styled.h3`
   ${media.phablet`font-size: 50px;`};
   ${media.phone`font-size: 40px;`};
 `;
-const Blurb = styled.div`
+/* const Blurb = styled.div`
   margin-top: 25px;
   width: 50%;
   max-width: 500px;
   a {
     ${mixins.inlineLink};
   }
-`;
+`; */
 const EmailLink = styled.a`
   ${mixins.bigButton};
   font-size: ${fontSizes.smallish};
@@ -169,19 +168,14 @@ class About extends Component {
   componentDidMount() {
     ScrollReveal().reveal(this.about, srConfig());
   }
-  
 
   render() {
     const { data } = this.props;
     const { frontmatter, html } = data[0].node;
-    const { title, skills, avatar } = frontmatter;
-
-
- 
+    const { skills, avatar } = frontmatter;
 
     return (
       <AboutContainer id="about" ref={el => (this.about = el)}>
-        
         <FlexContainer>
           <ContentContainer>
             <Hi>Hi , my name is </Hi>
@@ -189,7 +183,7 @@ class About extends Component {
             <Subtitle>I am a software developer.</Subtitle>
 
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            
+
             <SkillsContainer>
               {skills && skills.map((skill, i) => <Skill key={i}>{skill}</Skill>)}
             </SkillsContainer>
@@ -199,7 +193,6 @@ class About extends Component {
             <AvatarContainer>
               <Avatar fluid={avatar.childImageSharp.fluid} alt="Avatar" />
             </AvatarContainer>
-
           </PicContainer>
         </FlexContainer>
       </AboutContainer>
