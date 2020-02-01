@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jonas-kgomo.github.io/sitemap.xml
+Host: https://jonas-kgomo.github.io

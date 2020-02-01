@@ -2,10 +2,21 @@
 .cache
 node_modules
 yarn-error.log
-package-lock.json
-
-# Build directory
-/public
 .DS_Store
-
 .vscode/
+src
+.editorconfig
+.nvmrc
+bash.exe.stackdump
+gatsby-browser.js
+gatsby-config.js
+gatsby-node.js
+gatsby-ssr.js
+LICENSE
+package.json
+prettier.config.js
+package.json
+README.md 
+yarn.lock
+
+
